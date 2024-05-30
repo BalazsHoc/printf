@@ -6,13 +6,13 @@
 /*   By: bhocsak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 16:29:59 by bhocsak           #+#    #+#             */
-/*   Updated: 2024/05/07 16:20:46 by bhocsak          ###   ########.fr       */
+/*   Updated: 2024/05/30 17:47:53 by bhocsak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	hex(unsigned long n, const char base)
+static int	hex(unsigned int n, const char base)
 {
 	int	printed;
 
@@ -38,7 +38,7 @@ static int	hex(unsigned long n, const char base)
 	return (printed);
 }
 
-int	ft_puthex(unsigned long n, const char base)
+int	ft_puthex(unsigned int n, const char base)
 {
 	int	printed;
 

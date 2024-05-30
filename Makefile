@@ -6,14 +6,14 @@
 #    By: bhocsak <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/27 13:34:27 by bhocsak           #+#    #+#              #
-#    Updated: 2024/05/07 11:42:22 by bhocsak          ###   ########.fr        #
+#    Updated: 2024/05/21 13:11:05 by bhocsak          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SOURCES = 	ft_printf.c ft_puthex.c ft_putchar_pf.c ft_putstr_pf.c\  
+SOURCES = 	ft_printf.c ft_puthex.c ft_putchar_pf.c ft_putstr_pf.c\
 		ft_putptr.c ft_putuint.c ft_putnbr_pf.c
 
 OBJECTS = $(SOURCES:.c=.o)
