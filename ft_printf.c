@@ -71,7 +71,7 @@ int	main()
 	int	count = 0;
 	int count2 = 0;
 	int	orig = 0;
-	int	orig2 = 0;;
+	int	orig2 = 0;
 //	long hex = 454147483649;
 
 	count += ft_printf("%x\n", ULONG_MAX);
