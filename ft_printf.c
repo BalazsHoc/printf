@@ -6,7 +6,7 @@
 /*   By: bhocsak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 10:46:11 by bhocsak           #+#    #+#             */
-/*   Updated: 2024/05/31 16:44:18 by bhocsak          ###   ########.fr       */
+/*   Updated: 2024/06/11 10:23:07 by bhocsak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,16 +69,11 @@ int	ft_printf(const char *format, ...)
 int	main()
 {
 	int	count = 0;
-	int count2 = 0;
 	int	orig = 0;
-	int	orig2 = 0;
 //	long hex = 454147483649;
 
-	count += ft_printf("%x\n", ULONG_MAX);
-	orig += printf("%lx\n", ULONG_MAX); //doesnt matter
+	count += printf(" ");
+	orig += ft_printf(" ");
 	ft_printf("Myprintf ulongmax: %i\n", count);
 	printf("Origprintf ulongmax: %i\n", orig);
-	count2 += ft_printf("%%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %c%%\n", 'A', "42", 42, 42 ,42 , 42, 42, 'B', "-42", -42, -42 ,-42 ,-42, 42, 'C', "0", 0, 0 ,0 ,0, 42, 0);
-	orig2 += printf("%%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %%%c%%%s%%%d%%%i%%%u%%%x%%%X%%%% %c%%\n", 'A', "42", 42, 42 ,42 , 42, 42, 'B', "-42", -42, -42 ,-42 ,-42, 42, 'C', "0", 0, 0 ,0 ,0, 42, 0);
-	printf("Orig_printf testmix: %i\n", orig2);
 }*/
