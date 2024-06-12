@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static int	hex(unsigned int n, const char base)
+static int	hex(unsigned long n, const char base)
 {
 	int	printed;
 
@@ -38,7 +38,7 @@ static int	hex(unsigned int n, const char base)
 	return (printed);
 }
 
-int	ft_puthex(unsigned int n, const char base)
+int	ft_puthex(unsigned long n, const char base)
 {
 	int	printed;
 

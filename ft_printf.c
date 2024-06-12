@@ -6,7 +6,7 @@
 /*   By: bhocsak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 10:46:11 by bhocsak           #+#    #+#             */
-/*   Updated: 2024/06/11 10:23:07 by bhocsak          ###   ########.fr       */
+/*   Updated: 2024/06/12 15:41:29 by bhocsak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	ft_printf(const char *format, ...)
 	va_start(ap, format);
 	count = 0;
 	if (!format)
-		return (0);
+		return (-1);
 	while (*format)
 	{
 		if (*format == '%')
@@ -68,12 +68,14 @@ int	ft_printf(const char *format, ...)
 
 int	main()
 {
-	int	count = 0;
-	int	orig = 0;
+	int	count2 = 0;
+	int	orig2 = 0;
 //	long hex = 454147483649;
 
-	count += printf(" ");
-	orig += ft_printf(" ");
-	ft_printf("Myprintf ulongmax: %i\n", count);
-	printf("Origprintf ulongmax: %i\n", orig);
+//	count += ft_printf(" %p %p ", LONG_MIN, LONG_MAX);
+//	orig += printf(" %p %p ", LONG_MIN, LONG_MAX);	
+	orig2 += printf(" %p %p ", LONG_MIN, LONG_MAX);
+	count2 += ft_printf(" %+i ", -1);
+	ft_printf("Myprintf ulongmax: %i\n", count2);
+	printf("Origprintf ulongmax: %i\n", orig2);
 }*/

@@ -25,6 +25,6 @@ int		ft_putnbr_pf(int n);
 int		ft_putstr_pf(char *str);
 int		ft_putptr(void *ptr);
 int		ft_putuint(unsigned int n);
-int		ft_puthex(unsigned int n, const char base);
+int		ft_puthex(unsigned long n, const char base);
 
 #endif
